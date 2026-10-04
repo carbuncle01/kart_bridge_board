@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1500" viewBox="0 0 2400 1500" role="img" aria-labelledby="title desc">
+  <title id="title">JPBB-01 Rev.2 初回セットアップから通常運用まで</title>
+  <desc id="desc">ST-LINKによる初回設定、USB DFU、USB CDC、段階試験、通常運用の流れ。</desc>
+  <defs>
+    <style>
+      text { font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif; fill: #172033; }
+      .title { font-size: 52px; font-weight: 850; }
+      .sub { font-size: 23px; fill: #53657d; }
+      .phase { font-size: 26px; font-weight: 900; fill: #ffffff; }
+      .card-title { font-size: 28px; font-weight: 900; }
+      .card-body { font-size: 20px; fill: #34465e; }
+      .small { font-size: 18px; fill: #53657d; }
+      .white-body { font-size: 20px; fill: #ffffff; }
+      .arrow { fill: none; stroke: #2979ff; stroke-width: 7; marker-end: url(#head); }
+      .mini-arrow { fill: none; stroke: #ffffff; stroke-width: 5; marker-end: url(#white-head); }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#172033" flood-opacity="0.17"/>
+    </filter>
+    <marker id="head" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12z" fill="#2979ff"/></marker>
+    <marker id="white-head" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12z" fill="#ffffff"/></marker>
+  </defs>
+
+  <rect width="2400" height="1500" fill="#f3f6fb"/>
+  <text x="70" y="78" class="title">JPBB-01 Rev.2　初回セットアップ → 通常運用</text>
+  <text x="72" y="118" class="sub">ST-LINKは初回設定と復旧用。その後の更新はUSB-C＋BOOT/RSTで行う</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="175" width="560" height="520" rx="24" fill="#ffffff" stroke="#8bb5f7" stroke-width="4"/>
+    <rect x="70" y="175" width="560" height="66" rx="24" fill="#1565c0"/>
+    <text x="100" y="218" class="phase">PHASE 0　電源確認</text>
+    <text x="105" y="292" class="card-title">J6 USB-Cだけ接続</text>
+    <text x="105" y="338" class="card-body">1. 外観・短絡チェック</text>
+    <text x="105" y="378" class="card-body">2. TP3をGND基準にする</text>
+    <text x="105" y="418" class="card-body">3. TP2 ≈ 3.3 V</text>
+    <text x="105" y="458" class="card-body">4. TP1 ≈ 0 V</text>
+    <rect x="105" y="510" width="490" height="128" rx="16" fill="#e8f1fd"/>
+    <text x="132" y="550" class="card-title" fill="#1565c0">合格</text>
+    <text x="132" y="587" class="card-body">MCUロジック系のみ安全に起動</text>
+    <text x="132" y="619" class="small">まだBEC・受信機・サーボ・ESCは接続しない</text>
+
+    <rect x="690" y="175" width="730" height="520" rx="24" fill="#ffffff" stroke="#9b8ce8" stroke-width="4"/>
+    <rect x="690" y="175" width="730" height="66" rx="24" fill="#5e35b1"/>
+    <text x="720" y="218" class="phase">PHASE 1　初回だけST-LINK</text>
+    <text x="725" y="292" class="card-title">J6で給電 ＋ J7へSWD接続</text>
+    <text x="725" y="338" class="card-body">CubeProgrammer：ST-LINK / SWD</text>
+    <text x="725" y="378" class="card-body">Target voltage ≈ 3.3 Vを確認</text>
+    <rect x="725" y="410" width="660" height="126" rx="16" fill="#eee9fb"/>
+    <text x="755" y="449" class="card-title" fill="#5e35b1">Option Bytes</text>
+    <text x="755" y="490" class="card-body">BOOT_LOCK=0　 nBOOT1=1　 nBOOT_SEL=0</text>
+    <text x="725" y="578" class="card-body">Step 1を書込 → Verify → RST</text>
+    <text x="725" y="620" class="small">USBブートローダはSTM32内蔵ROM。ここでは書き込まない</text>
+    <text x="725" y="654" class="small">J7 pin 1 VTrefへST-LINKから給電しない</text>
+
+    <rect x="1480" y="175" width="850" height="520" rx="24" fill="#ffffff" stroke="#63c4a7" stroke-width="4"/>
+    <rect x="1480" y="175" width="850" height="66" rx="24" fill="#00897b"/>
+    <text x="1510" y="218" class="phase">PHASE 2　USB更新・USB通信</text>
+    <text x="1515" y="292" class="card-title">ST-LINKを外し、J6だけ接続</text>
+
+    <rect x="1515" y="326" width="360" height="218" rx="18" fill="#e4f5f1"/>
+    <text x="1545" y="365" class="card-title" fill="#00796b">ROM USB DFU</text>
+    <text x="1545" y="407" class="card-body">BOOTを押したまま</text>
+    <text x="1545" y="443" class="card-body">RSTを押して離す</text>
+    <text x="1545" y="479" class="card-body">BOOTを離す</text>
+    <text x="1545" y="520" class="small">Step 2以降のhexを書込</text>
+
+    <rect x="1935" y="326" width="360" height="218" rx="18" fill="#e4f5f1"/>
+    <text x="1965" y="365" class="card-title" fill="#00796b">通常 USB CDC</text>
+    <text x="1965" y="407" class="card-body">BOOTは押さない</text>
+    <text x="1965" y="443" class="card-body">RSTだけ押す</text>
+    <text x="1965" y="479" class="card-body">シリアルポート出現</text>
+    <text x="1965" y="520" class="small">PING → PONGを確認</text>
+    <path d="M1875 435 L1935 435" class="arrow"/>
+    <text x="1515" y="602" class="card-body">以後の更新はUSB-C＋BOOT/RSTだけで可能</text>
+    <text x="1515" y="640" class="small">失敗時はJ7のST-LINKへ戻して復旧</text>
+  </g>
+
+  <path d="M630 435 L690 435" class="arrow"/>
+  <path d="M1420 435 L1480 435" class="arrow"/>
+
+  <rect x="70" y="755" width="2260" height="320" rx="26" fill="#26364f"/>
+  <text x="105" y="808" class="phase">PHASE 3　安全を保ったままStep 3 → 8を順番に確認</text>
+
+  <g>
+    <rect x="110" y="850" width="330" height="165" rx="18" fill="#1976d2"/>
+    <text x="140" y="893" class="phase">STEP 3　RC入力</text>
+    <text x="140" y="935" class="white-body">CH1〜CH3 PWM読取り</text>
+    <text x="140" y="972" class="white-body">切断後invalidを確認</text>
+
+    <rect x="470" y="850" width="330" height="165" rx="18" fill="#0288d1"/>
+    <text x="500" y="893" class="phase">STEP 4　MCU PWM</text>
+    <text x="500" y="935" class="white-body">PB4 / PB5波形を測定</text>
+    <text x="500" y="972" class="white-body">まだMANUAL固定</text>
+
+    <rect x="830" y="850" width="330" height="165" rx="18" fill="#00897b"/>
+    <text x="860" y="893" class="phase">STEP 5　MUX切替</text>
+    <text x="860" y="935" class="white-body">MANUAL → AUTO</text>
+    <text x="860" y="972" class="white-body">RC異常でMANUAL</text>
+
+    <rect x="1190" y="850" width="330" height="165" rx="18" fill="#7b1fa2"/>
+    <text x="1220" y="893" class="phase">STEP 6　安全監視</text>
+    <text x="1220" y="935" class="white-body">通信・VBEC・watchdog</text>
+    <text x="1220" y="972" class="white-body">異常時の遷移を確認</text>
+
+    <rect x="1550" y="850" width="330" height="165" rx="18" fill="#ad2ba8"/>
+    <text x="1580" y="893" class="phase">STEP 7　統合制御</text>
+    <text x="1580" y="935" class="white-body">RC / PC権限を統合</text>
+    <text x="1580" y="972" class="white-body">指令監視を確認</text>
+
+    <rect x="1910" y="850" width="380" height="165" rx="18" fill="#c62828"/>
+    <text x="1940" y="893" class="phase">STEP 8　最終版</text>
+    <text x="1940" y="935" class="white-body">受信機任意・CH3切替</text>
+    <text x="1940" y="972" class="white-body">通信断SAFE・再アーム</text>
+
+    <path d="M440 932 L470 932" class="mini-arrow"/>
+    <path d="M800 932 L830 932" class="mini-arrow"/>
+    <path d="M1160 932 L1190 932" class="mini-arrow"/>
+    <path d="M1520 932 L1550 932" class="mini-arrow"/>
+    <path d="M1880 932 L1910 932" class="mini-arrow"/>
+  </g>
+
+  <g>
+    <rect x="70" y="1135" width="1390" height="285" rx="24" fill="#ffffff" stroke="#64a76f" stroke-width="4"/>
+    <rect x="70" y="1135" width="1390" height="62" rx="24" fill="#2e7d32"/>
+    <text x="105" y="1177" class="phase">PHASE 4　Step 8 通常運用</text>
+    <text x="110" y="1245" class="card-body">起動直後は SAFE / MANUAL → 安全値をSET → AUTOで明示的にアーム</text>
+    <text x="110" y="1288" class="card-body">PC制御中：SET / STREAM ≤ 200 ms　・　HEARTBEAT ≤ 500 ms</text>
+    <text x="110" y="1331" class="card-body">通信停止・USB切断・VBEC／受信機異常 → SAFE、PCアーム解除</text>
+    <text x="110" y="1374" class="small">復旧後も自動再開しない。新しいSETとAUTOが必要</text>
+
+    <rect x="1515" y="1135" width="815" height="285" rx="24" fill="#fff4e5" stroke="#ef6c00" stroke-width="4"/>
+    <text x="1550" y="1182" class="card-title" fill="#c65300">実車試験へ進む前に</text>
+    <text x="1550" y="1230" class="card-body">・モーター線を外し、車輪を浮かせて全Stepを確認</text>
+    <text x="1550" y="1271" class="card-body">・ESC停止値と3.3 V HIGH認識を実測</text>
+    <text x="1550" y="1312" class="card-body">・RC / PC / USB / VBEC異常を個別に試験</text>
+    <text x="1550" y="1353" class="card-body">・J5逆接防止、ヒューズ、サージ対策を上流へ</text>
+    <text x="1550" y="1394" class="small">1項目でも未確認なら走行試験へ進まない</text>
+  </g>
+
+  <text x="1200" y="1470" text-anchor="middle" class="sub">通常更新：MANUAL → 外部負荷を外す → BOOT＋RSTでDFU → 書込み → RSTで通常起動 → PING / STATUS</text>
+</svg>

@@ -1,0 +1,43 @@
+# KiCad temporary files
+**/*-backups/
+**/*.lck
+**/~*
+**/*.bak
+**/*.tmp
+**/*.kicad_prl
+**/__pycache__/
+**/*.pyc
+**/.history/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Firmware build outputs
+firmware/build/
+firmware/vendor/
+firmware/cmake-build-*/
+firmware/**/*.elf
+firmware/**/*.hex
+firmware/**/*.bin
+firmware/**/*.map
+firmware/**/*.su
+
+# Generated manufacturing files (regenerate with scripts/export.sh)
+hardware/kicad/**/fabrication/build/
+
+# Regeneration/review intermediates.  The checked 60x30 .ses route is source.
+hardware/kicad/**/fabrication/review/*.xml
+hardware/kicad/**/fabrication/review/*.json
+hardware/kicad/**/fabrication/review/*.rpt
+hardware/kicad/**/fabrication/review/*.kicad_pcb
+hardware/kicad/**/fabrication/review/*.kicad_pro
+hardware/kicad/**/fabrication/review/*.kicad_prl
+hardware/kicad/**/fabrication/review/final_checks/
+hardware/kicad/**/fabrication/review/render/
+hardware/kicad/**/fabrication/review/autoroute/*
+!hardware/kicad/**/fabrication/review/autoroute/kart_bridge_board_60x30.ses
+
+tmp/

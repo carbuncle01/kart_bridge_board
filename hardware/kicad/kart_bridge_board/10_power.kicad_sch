@@ -1,0 +1,1588 @@
+(kicad_sch
+  (version 20250114)
+  (generator "jpbb_generator")
+  (uuid "88e40f2f-6288-5f22-a614-d8924e4814e0")
+  (paper "A4")
+  (title_block
+    (title "kart_bridge_board — 10_power")
+    (date "2026-07-22")
+    (rev "Rev.2")
+    (company "JPBB-01")
+    (comment 1 "JPBB-HW-DEF-002")
+    (comment 2 "Power, connectors, LDO and VBEC monitor")
+  )
+  (lib_symbols
+    (symbol "JPBB:C"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "C"
+        (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "C"
+        (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Description" "JPBB generated symbol"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Manufacturer" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "MPN" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "LCSC Part #" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "DNP" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Notes" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (symbol "C_1_1"
+        (rectangle
+          (start -2.54 -2.54)
+          (end 2.54 2.54)
+          (stroke (width 0) (type default))
+          (fill (type background))
+        )
+        (pin passive line
+          (at -5.08 0 0)
+          (length 2.54)
+          (name "+" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line
+          (at 5.08 0 180)
+          (length 2.54)
+          (name "-" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "JPBB:D_Schottky"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "D"
+        (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "D_Schottky"
+        (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Description" "JPBB generated symbol"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Manufacturer" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "MPN" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "LCSC Part #" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "DNP" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Notes" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (symbol "D_Schottky_1_1"
+        (rectangle
+          (start -2.54 -2.54)
+          (end 2.54 2.54)
+          (stroke (width 0) (type default))
+          (fill (type background))
+        )
+        (pin passive line
+          (at -5.08 0 0)
+          (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line
+          (at 5.08 0 180)
+          (length 2.54)
+          (name "K" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "JPBB:MCP1703AT_3302E_CB"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "MCP1703AT_3302E_CB"
+        (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Description" "JPBB generated symbol"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Manufacturer" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "MPN" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "LCSC Part #" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "DNP" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Notes" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (symbol "MCP1703AT_3302E_CB_1_1"
+        (rectangle
+          (start -5.08 -2.54)
+          (end 5.08 2.54)
+          (stroke (width 0) (type default))
+          (fill (type background))
+        )
+        (pin power_in line
+          (at -7.62 -1.27 0)
+          (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line
+          (at -7.62 1.27 0)
+          (length 2.54)
+          (name "VIN" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_out line
+          (at 7.62 0 180)
+          (length 2.54)
+          (name "VOUT" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "JPBB:PWR_FLAG"
+      (exclude_from_sim no)
+      (in_bom no)
+      (on_board no)
+      (property "Reference" "#FLG"
+        (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "PWR_FLAG"
+        (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Description" "JPBB generated symbol"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Manufacturer" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "MPN" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "LCSC Part #" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "DNP" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Notes" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (symbol "PWR_FLAG_1_1"
+        (rectangle
+          (start -2.54 -2.54)
+          (end 2.54 2.54)
+          (stroke (width 0) (type default))
+          (fill (type background))
+        )
+        (pin power_out line
+          (at -5.08 0 0)
+          (length 2.54)
+          (name "pwr" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "JPBB:R"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "R"
+        (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "R"
+        (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Description" "JPBB generated symbol"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Manufacturer" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "MPN" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "LCSC Part #" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "DNP" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (property "Notes" ""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27))
+            (hide yes))
+      )
+      (symbol "R_1_1"
+        (rectangle
+          (start -2.54 -2.54)
+          (end 2.54 2.54)
+          (stroke (width 0) (type default))
+          (fill (type background))
+        )
+        (pin passive line
+          (at -5.08 0 0)
+          (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line
+          (at 5.08 0 180)
+          (length 2.54)
+          (name "2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (embedded_fonts no)
+    )
+  )
+  (global_label "GND"
+    (shape bidirectional)
+    (at 104.14 57.15 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "cefdc7c9-1f5b-5877-a617-b5b34b912ba0")
+  )
+  (global_label "LOGIC_RAW"
+    (shape bidirectional)
+    (at 104.14 54.61 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "d1155062-baff-5957-9ddf-b5dca1c28a0b")
+  )
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 119.38 55.88 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "731f3607-8646-58ad-9b9c-dc6143c97e5c")
+  )
+  (global_label "VBEC"
+    (shape bidirectional)
+    (at 63.5 40.64 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "0141bbb7-3ea7-54e2-8a86-3f6b340689e3")
+  )
+  (global_label "LOGIC_RAW"
+    (shape bidirectional)
+    (at 73.66 40.64 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "ac7a73e6-0ee1-55ae-be75-0766eb34f1a7")
+  )
+  (global_label "USB_VBUS"
+    (shape bidirectional)
+    (at 63.5 53.34 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "36b288fa-e8f8-5f54-b414-b9b7e3e90ee3")
+  )
+  (global_label "LOGIC_RAW"
+    (shape bidirectional)
+    (at 73.66 53.34 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "620fec9f-6f37-5c75-9932-4215060856da")
+  )
+  (global_label "VBEC"
+    (shape bidirectional)
+    (at 68.58 101.6 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "d030fa00-0c90-5252-8034-5d785624ed8d")
+  )
+  (global_label "GND"
+    (shape bidirectional)
+    (at 78.74 101.6 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "b14ea18d-5b41-5a3e-86a9-4c7cbe0e4e74")
+  )
+  (global_label "LOGIC_RAW"
+    (shape bidirectional)
+    (at 86.36 40.64 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "3ba1d245-98e2-5371-a19f-5c8c7a9a34da")
+  )
+  (global_label "GND"
+    (shape bidirectional)
+    (at 96.52 40.64 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "7b13ebf2-fafc-5175-96c0-060eb2dac229")
+  )
+  (global_label "LOGIC_RAW"
+    (shape bidirectional)
+    (at 86.36 53.34 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "30223c14-7056-558a-900a-2d9c37835432")
+  )
+  (global_label "GND"
+    (shape bidirectional)
+    (at 96.52 53.34 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "b12d7e4a-2220-5a77-b211-610c51df44ba")
+  )
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 137.16 35.56 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "8acf61f0-c362-52ae-801b-50483864d95f")
+  )
+  (global_label "GND"
+    (shape bidirectional)
+    (at 147.32 35.56 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "c2811302-39ef-518c-af73-a107b5c867a5")
+  )
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 137.16 48.26 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "0869da5c-a59d-5e00-a222-1a3c13aab64e")
+  )
+  (global_label "GND"
+    (shape bidirectional)
+    (at 147.32 48.26 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "d6c45d4f-552e-51b8-936b-521a0d01c532")
+  )
+  (global_label "VBEC"
+    (shape bidirectional)
+    (at 96.52 101.6 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "446b3161-025a-5a0e-b454-7fd3f45bd2ae")
+  )
+  (global_label "VBEC_SENSE"
+    (shape bidirectional)
+    (at 106.68 101.6 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "5ea9d390-9349-54a5-8236-48e88e60859a")
+  )
+  (global_label "VBEC_SENSE"
+    (shape bidirectional)
+    (at 160.02 101.6 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "27985db0-e31b-5970-be01-aa1ea71f73e9")
+  )
+  (global_label "GND"
+    (shape bidirectional)
+    (at 170.18 101.6 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "ed94c8c1-f99a-564a-b1f6-2899ab7d1037")
+  )
+  (global_label "VBEC_SENSE"
+    (shape bidirectional)
+    (at 160.02 116.84 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "4cf1dc47-6434-5ea8-b057-ef01dc2c0d59")
+  )
+  (global_label "GND"
+    (shape bidirectional)
+    (at 170.18 116.84 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "3d1580ff-80b5-515d-b3e7-c8a632b54758")
+  )
+  (global_label "VBEC"
+    (shape bidirectional)
+    (at 81.28 139.7 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "245eb6ee-e4d8-52ae-9f3d-35d0d15a1bb3")
+  )
+  (global_label "GND"
+    (shape bidirectional)
+    (at 111.76 139.7 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "e0730342-a63a-5074-ae01-b42181eb0ef6")
+  )
+  (global_label "LOGIC_RAW"
+    (shape bidirectional)
+    (at 142.24 139.7 0)
+    (fields_autoplaced yes)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "5f35c83e-4c3c-5344-8e4e-844b2900947a")
+  )
+  (symbol
+    (lib_id "JPBB:MCP1703AT_3302E_CB")
+    (at 111.76 55.88 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "7cfdeddd-72a8-5ba1-be68-042c8a80d983")
+    (property "Reference" "U3"
+      (at 111.76 50.8 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "MCP1703AT-3302E/CB"
+      (at 111.76 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+      (at 111.76 55.88 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP1703-Data-Sheet-DS20005122.pdf"
+      (at 111.76 55.88 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "SOT-23A: Pin 1 GND, Pin 2 VOUT, Pin 3 VIN; LOGIC_RAW is diode-OR powered"
+      (at 111.76 55.88 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" "Microchip Technology"
+      (at 111.76 55.88 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" "MCP1703AT-3302E/CB"
+      (at 111.76 55.88 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" "C144183"
+      (at 111.76 55.88 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 111.76 55.88 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" "SOT-23A: Pin 1 GND, Pin 2 VOUT, Pin 3 VIN; LOGIC_RAW is diode-OR powered"
+      (at 111.76 55.88 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "1"
+      (uuid "5ff6c7fe-5a88-5eda-b16a-c6ff62ece788")
+    )
+    (pin "3"
+      (uuid "a7c10554-d30d-5c0f-b960-95007b9ee3f9")
+    )
+    (pin "2"
+      (uuid "897cc2bd-5766-59a1-9049-fc7123a621f4")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "U3")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:D_Schottky")
+    (at 68.58 40.64 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "8ad14076-a64e-5202-b55e-e56520ac3e53")
+    (property "Reference" "D1"
+      (at 68.58 35.56 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W"
+      (at 68.58 45.72 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123"
+      (at 68.58 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" "https://jlcpcb.com/partdetail/MDD_Microdiode_Semiconductor-1N4148W/C84367"
+      (at 68.58 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "Low-leakage VBEC-to-logic OR diode; Pin 1 cathode at LOGIC_RAW"
+      (at 68.58 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" "MDD(Microdiode Semiconductor)"
+      (at 68.58 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" "1N4148W"
+      (at 68.58 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" "C84367"
+      (at 68.58 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 68.58 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" "Low-leakage VBEC-to-logic OR diode; Pin 1 cathode at LOGIC_RAW"
+      (at 68.58 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "2"
+      (uuid "da23a6bc-447c-5999-9041-a19f915dbee1")
+    )
+    (pin "1"
+      (uuid "b95aa64f-1061-528e-9471-66783112daad")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "D1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:D_Schottky")
+    (at 68.58 53.34 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "0fa717d2-0e36-5960-9d53-2eb75861fae3")
+    (property "Reference" "D2"
+      (at 68.58 48.26 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W"
+      (at 68.58 58.42 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123"
+      (at 68.58 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" "https://jlcpcb.com/partdetail/MDD_Microdiode_Semiconductor-1N4148W/C84367"
+      (at 68.58 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "Low-leakage USB-to-logic OR diode; Pin 1 cathode at LOGIC_RAW"
+      (at 68.58 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" "MDD(Microdiode Semiconductor)"
+      (at 68.58 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" "1N4148W"
+      (at 68.58 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" "C84367"
+      (at 68.58 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 68.58 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" "Low-leakage USB-to-logic OR diode; Pin 1 cathode at LOGIC_RAW"
+      (at 68.58 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "2"
+      (uuid "fe942bdd-86f3-54d7-a97a-39dd45b4d180")
+    )
+    (pin "1"
+      (uuid "b63e71a8-480a-5bfe-85a2-d11dc4d0fdae")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "D2")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:C")
+    (at 73.66 101.6 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "9fcd3e98-07e5-5de9-82fe-40ac41337ba7")
+    (property "Reference" "C1"
+      (at 73.66 96.52 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "100uF 25V"
+      (at 73.66 106.68 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JPBB:CP_Panasonic_D6.3x5.8"
+      (at 73.66 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" "https://industrial.panasonic.com/content/data/CP/PDF/Hybrid/Hybrid_data_e.pdf"
+      (at 73.66 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "Polarized hybrid C_BULK; place beside J4/J5; Pin 1 positive"
+      (at 73.66 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" "Panasonic"
+      (at 73.66 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" "EEHZK1E101UP"
+      (at 73.66 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" "C454668"
+      (at 73.66 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 73.66 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" "Polarized hybrid C_BULK; place beside J4/J5; Pin 1 positive"
+      (at 73.66 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "1"
+      (uuid "c7c2215f-775e-5f26-af8a-26a91f12e8e1")
+    )
+    (pin "2"
+      (uuid "87e11347-1929-5a50-bd99-8417e8e045f1")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "C1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:C")
+    (at 91.44 40.64 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "daf0dbc0-8946-5f6d-91c2-95cacb2c360c")
+    (property "Reference" "C3"
+      (at 91.44 35.56 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1uF"
+      (at 91.44 45.72 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 91.44 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 91.44 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "LDO input"
+      (at 91.44 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 91.44 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" "CL05A105KA5NQNC"
+      (at 91.44 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" "C52923"
+      (at 91.44 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 91.44 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" "LDO input"
+      (at 91.44 40.64 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "1"
+      (uuid "b8cddca2-9b31-554a-addb-efcbd250d37b")
+    )
+    (pin "2"
+      (uuid "7f617e73-8691-57fd-930a-c7fbb9b18f9d")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "C3")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:C")
+    (at 91.44 53.34 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "4c33220d-73b9-5ef8-b0cb-451b4ab261dc")
+    (property "Reference" "C18"
+      (at 91.44 48.26 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "4.7uF 16V"
+      (at 91.44 58.42 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 91.44 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 91.44 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "USB/VBEC logic-rail hold-up and OR-node bypass"
+      (at 91.44 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 91.44 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" "CL10A475KO8NNNC"
+      (at 91.44 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" "C19666"
+      (at 91.44 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 91.44 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" "USB/VBEC logic-rail hold-up and OR-node bypass"
+      (at 91.44 53.34 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "1"
+      (uuid "fb02f7ae-bd1d-5f66-8d62-950e3c991a61")
+    )
+    (pin "2"
+      (uuid "0337d303-6ed6-5f26-9062-154b0dc6b250")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "C18")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:C")
+    (at 142.24 35.56 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "9c2854ee-1a82-547f-8b95-09b4c0e41dca")
+    (property "Reference" "C4"
+      (at 142.24 30.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1uF"
+      (at 142.24 40.64 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 142.24 35.56 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 142.24 35.56 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "LDO output"
+      (at 142.24 35.56 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 142.24 35.56 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" "CL05A105KA5NQNC"
+      (at 142.24 35.56 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" "C52923"
+      (at 142.24 35.56 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 142.24 35.56 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" "LDO output"
+      (at 142.24 35.56 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "1"
+      (uuid "ea76ea58-46bb-5047-a4c2-3acab140e06a")
+    )
+    (pin "2"
+      (uuid "8cfd3ed0-f167-59c0-9efe-a637843227d1")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "C4")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:C")
+    (at 142.24 48.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "9727681c-588e-5d12-ad92-621e0c8c9d10")
+    (property "Reference" "C5"
+      (at 142.24 43.18 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "100nF"
+      (at 142.24 53.34 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 142.24 48.26 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 142.24 48.26 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "LDO output bypass"
+      (at 142.24 48.26 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 142.24 48.26 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" "CL05B104KO5NNNC"
+      (at 142.24 48.26 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" "C1525"
+      (at 142.24 48.26 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 142.24 48.26 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" "LDO output bypass"
+      (at 142.24 48.26 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "1"
+      (uuid "f5d85451-435d-5e46-998f-efa139c49ddd")
+    )
+    (pin "2"
+      (uuid "35c5eb22-fe89-55bf-a0a7-4c35c7af2a0d")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "C5")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:R")
+    (at 101.6 101.6 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "1725cf1e-1c52-5597-8857-182e95226340")
+    (property "Reference" "R1"
+      (at 101.6 96.52 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "100k"
+      (at 101.6 106.68 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 101.6 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 101.6 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "100k"
+      (at 101.6 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 101.6 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" "0402WGF1003TCE"
+      (at 101.6 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" "C25741"
+      (at 101.6 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 101.6 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" ""
+      (at 101.6 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "1"
+      (uuid "84e07e31-5c96-5e05-8eaf-faf09c1a21b4")
+    )
+    (pin "2"
+      (uuid "d6f6239e-626b-5f65-8188-f7a64bd88489")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "R1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:R")
+    (at 165.1 101.6 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "1e7d1882-7271-5801-9286-f51cfd318af8")
+    (property "Reference" "R2"
+      (at 165.1 96.52 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "22k"
+      (at 165.1 106.68 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 165.1 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 165.1 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "22k"
+      (at 165.1 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 165.1 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" "0402WGF2202TCE"
+      (at 165.1 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" "C25768"
+      (at 165.1 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 165.1 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" ""
+      (at 165.1 101.6 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "1"
+      (uuid "c9fd399a-404d-569a-bd09-555951607bc2")
+    )
+    (pin "2"
+      (uuid "84e45122-3c79-5f49-a71e-090b286190c2")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "R2")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:C")
+    (at 165.1 116.84 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "a70b1710-2962-50c0-ab3c-ba90bb18541e")
+    (property "Reference" "C6"
+      (at 165.1 111.76 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "10nF"
+      (at 165.1 121.92 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 165.1 116.84 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 165.1 116.84 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "ADC anti-noise filter"
+      (at 165.1 116.84 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 165.1 116.84 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" "CL05B103KB5NNNC"
+      (at 165.1 116.84 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" "C15195"
+      (at 165.1 116.84 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 165.1 116.84 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" "ADC anti-noise filter"
+      (at 165.1 116.84 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "1"
+      (uuid "6cf08915-2afb-5e6e-8c50-8c2a49e4cc6f")
+    )
+    (pin "2"
+      (uuid "04e8ee83-48ee-533b-aa5b-3f941949d63e")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "C6")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:PWR_FLAG")
+    (at 86.36 139.7 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "5d1f7d40-0b55-59fa-b144-9f2a04495a8e")
+    (property "Reference" "#FLG01"
+      (at 86.36 134.62 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PWR_FLAG"
+      (at 86.36 144.78 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" ""
+      (at 86.36 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 86.36 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "J5 Pin 2 is the VBEC source"
+      (at 86.36 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" ""
+      (at 86.36 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" ""
+      (at 86.36 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" ""
+      (at 86.36 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 86.36 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" "J5 Pin 2 is the VBEC source"
+      (at 86.36 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "1"
+      (uuid "7e18ab68-77a2-5be4-802e-2b477db0be88")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "#FLG01")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:PWR_FLAG")
+    (at 116.84 139.7 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "5bd40a3f-cd65-5b1d-a36c-3452358cd305")
+    (property "Reference" "#FLG02"
+      (at 116.84 134.62 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PWR_FLAG"
+      (at 116.84 144.78 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" ""
+      (at 116.84 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 116.84 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "Ground reference source for ERC"
+      (at 116.84 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" ""
+      (at 116.84 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" ""
+      (at 116.84 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" ""
+      (at 116.84 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 116.84 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" "Ground reference source for ERC"
+      (at 116.84 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "1"
+      (uuid "f1eaf258-56a7-5163-8c31-b55c0eddb46e")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "#FLG02")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "JPBB:PWR_FLAG")
+    (at 147.32 139.7 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid "7e38fa40-7734-5a77-b3f8-2e200eb8c053")
+    (property "Reference" "#FLG03"
+      (at 147.32 134.62 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PWR_FLAG"
+      (at 147.32 144.78 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" ""
+      (at 147.32 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 147.32 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Description" "D1/D2 diode-OR is the valid LOGIC_RAW source for ERC"
+      (at 147.32 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Manufacturer" ""
+      (at 147.32 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "MPN" ""
+      (at 147.32 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "LCSC Part #" ""
+      (at 147.32 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "DNP" "No"
+      (at 147.32 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (property "Notes" "D1/D2 diode-OR is the valid LOGIC_RAW source for ERC"
+      (at 147.32 139.7 0)
+      (effects (font (size 1.27 1.27))
+          (hide yes))
+    )
+    (pin "1"
+      (uuid "865a832a-73fb-5248-9601-8f2cfea8f37b")
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b"
+          (reference "#FLG03")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (sheet_instances
+    (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b" (page "2"))
+  )
+  (embedded_fonts no)
+)

@@ -1,0 +1,23 @@
+(version 1)
+
+# JLCPCB standard-cost Rev.2 manufacturing minima. The matching global values
+# live in kart_bridge_board.kicad_pro; these rules keep the constraints
+# visible and reviewable in source control.
+(rule "JPBB minimum routed track width"
+    (constraint track_width (min 0.15mm)))
+
+(rule "JPBB minimum through-via drill"
+    (condition "A.Type == 'Via'")
+    (constraint hole_size (min 0.30mm)))
+
+(rule "JPBB minimum through-via annular ring"
+    (condition "A.Type == 'Via'")
+    (constraint annular_width (min 0.075mm)))
+
+(rule "JPBB copper to board-edge clearance"
+    (constraint edge_clearance (min 0.40mm)))
+
+(rule "Adhesive area bottom-side footprints"
+    (layer B.Cu)
+    (condition "A.intersectsArea('ADHESIVE_20X12')")
+    (constraint disallow footprint))

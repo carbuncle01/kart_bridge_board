@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1920" viewBox="0 0 2400 1920" role="img" aria-labelledby="title desc">
+  <title id="title">JPBB-01 Rev.2 TP1〜TP8 測定ガイド</title>
+  <desc id="desc">KiCadレンダリング上に全テストポイントを示し、役割、期待電圧、PWM波形条件を日本語で説明する。</desc>
+  <defs>
+    <style>
+      text { font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif; fill: #172033; }
+      .title { font-size: 52px; font-weight: 850; }
+      .sub { font-size: 23px; fill: #52647d; }
+      .tp-title { font-size: 25px; font-weight: 900; }
+      .tp-body { font-size: 19px; fill: #34465e; }
+      .tp-small { font-size: 17px; fill: #506078; }
+      .card { fill: #ffffff; stroke-width: 4; }
+      .leader { fill: none; stroke-width: 6; }
+      .ring { fill: none; stroke-width: 10; }
+      .note-title { font-size: 25px; font-weight: 900; fill: #ffffff; }
+      .note-body { font-size: 20px; fill: #ffffff; }
+      .table-h { font-size: 21px; font-weight: 800; fill: #ffffff; }
+      .table-t { font-size: 19px; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#172033" flood-opacity="0.18"/>
+    </filter>
+    <marker id="red-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12z" fill="#e53935"/></marker>
+    <marker id="orange-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12z" fill="#fb8c00"/></marker>
+    <marker id="blue-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12z" fill="#1e88e5"/></marker>
+    <marker id="cyan-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12z" fill="#00acc1"/></marker>
+    <marker id="purple-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12z" fill="#8e24aa"/></marker>
+  </defs>
+
+  <rect width="2400" height="1920" fill="#f3f6fb"/>
+  <text x="70" y="78" class="title">JPBB-01 Rev.2　TP1〜TP8 測定ガイド</text>
+  <text x="72" y="118" class="sub">TOP VIEW｜黒プローブは TP3 (GND)｜TP4〜TP8はDC電圧ではなくPWM波形を確認</text>
+
+  <g filter="url(#shadow)">
+    <rect x="384" y="248" width="1632" height="932" rx="20" fill="#dce3ee"/>
+    <image href="generated/jpbb_rev2_top_board.png" x="400" y="264" width="1600" height="900"/>
+  </g>
+
+  <!-- Top input test points -->
+  <g>
+    <rect class="card" x="310" y="145" width="350" height="120" rx="16" stroke="#00acc1"/>
+    <text x="332" y="184" class="tp-title" fill="#00838f">TP4：RX CH1</text>
+    <text x="332" y="216" class="tp-body">操舵入力PWM</text>
+    <text x="332" y="245" class="tp-small">0〜受信機HIGH（典型3.3/5 V）</text>
+    <path d="M530 265 C545 320 570 365 606 417" class="leader" stroke="#00acc1" marker-end="url(#cyan-arrow)"/>
+
+    <rect class="card" x="700" y="145" width="350" height="120" rx="16" stroke="#00acc1"/>
+    <text x="722" y="184" class="tp-title" fill="#00838f">TP5：RX CH2</text>
+    <text x="722" y="216" class="tp-body">スロットル入力PWM</text>
+    <text x="722" y="245" class="tp-small">0〜受信機HIGH（典型3.3/5 V）</text>
+    <path d="M875 265 L875 417" class="leader" stroke="#00acc1" marker-end="url(#cyan-arrow)"/>
+
+    <rect class="card" x="1480" y="145" width="480" height="120" rx="16" stroke="#00acc1"/>
+    <text x="1502" y="184" class="tp-title" fill="#00838f">TP6：RX CH3（制御権）</text>
+    <text x="1502" y="216" class="tp-body">≤1300 µs: RC　≥1700 µs: PC</text>
+    <text x="1502" y="245" class="tp-small">1300〜1700 µsはヒステリシス帯</text>
+    <path d="M1690 265 C1675 320 1650 365 1617 417" class="leader" stroke="#00acc1" marker-end="url(#cyan-arrow)"/>
+  </g>
+
+  <!-- Rings on exact TP coordinates -->
+  <g>
+    <circle class="ring" cx="606" cy="417" r="25" stroke="#00acc1"/>
+    <circle class="ring" cx="876" cy="417" r="25" stroke="#00acc1"/>
+    <circle class="ring" cx="1616" cy="417" r="25" stroke="#00acc1"/>
+    <circle class="ring" cx="1841" cy="782" r="25" stroke="#8e24aa"/>
+    <circle class="ring" cx="931" cy="1018" r="25" stroke="#1e88e5"/>
+    <circle class="ring" cx="1178" cy="1018" r="25" stroke="#fb8c00"/>
+    <circle class="ring" cx="1628" cy="1018" r="25" stroke="#e53935"/>
+    <circle class="ring" cx="1718" cy="1018" r="25" stroke="#8e24aa"/>
+  </g>
+
+  <!-- Right-side TP7 -->
+  <g>
+    <rect class="card" x="2025" y="665" width="345" height="190" rx="16" stroke="#8e24aa"/>
+    <text x="2047" y="706" class="tp-title" fill="#7b1fa2">TP7：SERVO OUT</text>
+    <text x="2047" y="740" class="tp-body">U2選択後の操舵PWM</text>
+    <text x="2047" y="774" class="tp-small">MANUAL: TP4と同波形</text>
+    <text x="2047" y="802" class="tp-small">AUTO: 0〜3.3 V</text>
+    <text x="2047" y="830" class="tp-small">パルス幅 1.0〜2.0 ms</text>
+    <path d="M2025 760 C1960 760 1900 770 1841 782" class="leader" stroke="#8e24aa" marker-end="url(#purple-arrow)"/>
+  </g>
+
+  <!-- Bottom cards TP1/2/3/8 -->
+  <g>
+    <rect class="card" x="80" y="1205" width="510" height="150" rx="18" stroke="#1e88e5"/>
+    <text x="108" y="1248" class="tp-title" fill="#1565c0">TP3：GND</text>
+    <text x="108" y="1283" class="tp-body">基準 0 V・黒プローブ接続先</text>
+    <text x="108" y="1321" class="tp-small">他のTPはすべてTP3基準で測る</text>
+    <path d="M520 1205 C650 1135 790 1060 931 1018" class="leader" stroke="#1e88e5" marker-end="url(#blue-arrow)"/>
+
+    <rect class="card" x="615" y="1205" width="510" height="150" rx="18" stroke="#fb8c00"/>
+    <text x="643" y="1248" class="tp-title" fill="#ef6c00">TP2：+3V3</text>
+    <text x="643" y="1283" class="tp-body">期待値：約 3.3 V</text>
+    <text x="643" y="1321" class="tp-small">USB給電 / BEC給電のどちらでも上昇</text>
+    <path d="M1020 1205 C1080 1135 1130 1060 1178 1018" class="leader" stroke="#fb8c00" marker-end="url(#orange-arrow)"/>
+
+    <rect class="card" x="1150" y="1205" width="610" height="150" rx="18" stroke="#e53935"/>
+    <text x="1178" y="1248" class="tp-title" fill="#c62828">TP1：VBEC（主電源）</text>
+    <text x="1178" y="1283" class="tp-body">初回 6.0 V / 正常判定 5.2〜8.5 V</text>
+    <text x="1178" y="1321" class="tp-small">USBのみ: 0 V付近。逆接保護なし</text>
+    <path d="M1570 1205 C1595 1125 1615 1060 1628 1018" class="leader" stroke="#e53935" marker-end="url(#red-arrow)"/>
+
+    <rect class="card" x="1785" y="1205" width="535" height="150" rx="18" stroke="#8e24aa"/>
+    <text x="1813" y="1248" class="tp-title" fill="#7b1fa2">TP8：ESC OUT</text>
+    <text x="1813" y="1283" class="tp-body">MANUAL: TP5 / AUTO: 0〜3.3 V</text>
+    <text x="1813" y="1321" class="tp-small">通常 1.0〜2.0 ms / 20 ms周期</text>
+    <path d="M1900 1205 C1835 1120 1775 1060 1718 1018" class="leader" stroke="#8e24aa" marker-end="url(#purple-arrow)"/>
+  </g>
+
+  <!-- Measurement summary -->
+  <g>
+    <rect x="70" y="1400" width="2260" height="445" rx="24" fill="#ffffff" stroke="#c4cfdd" stroke-width="3"/>
+    <rect x="70" y="1400" width="2260" height="58" rx="24" fill="#26364f"/>
+    <text x="105" y="1438" class="table-h">測定の要点</text>
+
+    <rect x="105" y="1490" width="690" height="300" rx="18" fill="#e8f1fd"/>
+    <text x="135" y="1530" class="tp-title" fill="#1565c0">電源TP：マルチメータでOK</text>
+    <text x="135" y="1572" class="table-t">TP3をCOM（黒）に固定</text>
+    <text x="135" y="1610" class="table-t">TP1: BEC入力そのもの</text>
+    <text x="135" y="1648" class="table-t">TP2: MCUロジック電源 3.3 V</text>
+    <text x="135" y="1686" class="table-t">USBのみ: TP1≈0 V、TP2≈3.3 V</text>
+    <text x="135" y="1724" class="table-t">BECのみ: TP1=入力値、TP2≈3.3 V</text>
+    <text x="135" y="1762" class="tp-small">短絡防止のため細いプローブを使用</text>
+
+    <rect x="855" y="1490" width="690" height="300" rx="18" fill="#e8f8fb"/>
+    <text x="885" y="1530" class="tp-title" fill="#00838f">PWM TP：オシロ / ロジアナ推奨</text>
+    <text x="885" y="1572" class="table-t">TP4〜TP6: 受信機からの生信号</text>
+    <text x="885" y="1610" class="table-t">TP7 / TP8: MUX選択後の出力</text>
+    <text x="885" y="1648" class="table-t">標準: 約50 Hz（周期 20 ms）</text>
+    <text x="885" y="1686" class="table-t">有効幅: 850〜2150 µs</text>
+    <text x="885" y="1724" class="table-t">制御幅: 1000〜2000 µs</text>
+    <text x="885" y="1762" class="tp-small">DCメータ値は平均値で、HIGH電圧ではない</text>
+
+    <rect x="1605" y="1490" width="690" height="300" rx="18" fill="#f5eaf9"/>
+    <text x="1635" y="1530" class="tp-title" fill="#7b1fa2">経路の見分け方</text>
+    <text x="1635" y="1572" class="table-t">MANUAL: TP7≒TP4、TP8≒TP5</text>
+    <text x="1635" y="1610" class="table-t">AUTO: TP7 / TP8はMCUの3.3 V PWM</text>
+    <text x="1635" y="1648" class="table-t">VBEC不足: U5がMUX出力を無効化</text>
+    <text x="1635" y="1686" class="table-t">SAFE値: 1500 / 1500 µs（現設定）</text>
+    <text x="1635" y="1724" class="table-t">J5の＋がVBEC入力、SがTP8系統</text>
+    <text x="1635" y="1762" class="tp-small">サーボ/ESCが3.3 V HIGHを認識するか実機確認</text>
+  </g>
+
+  <text x="1200" y="1885" text-anchor="middle" class="sub">位置は kart_bridge_board.kicad_pcb の座標に基づく｜Rev.2 TP9〜TP12は存在しない</text>
+</svg>

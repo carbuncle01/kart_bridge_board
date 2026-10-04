@@ -1,0 +1,97 @@
+(kicad_sch
+  (version 20250114)
+  (generator "jpbb_generator")
+  (uuid "cf4b68e8-f2b4-5eba-b802-9ec08061984e")
+  (paper "A4")
+  (title_block
+    (title "kart_bridge_board — top")
+    (date "2026-07-22")
+    (rev "Rev.2")
+    (company "JPBB-01")
+    (comment 1 "JPBB-HW-DEF-002")
+    (comment 2 "Hierarchical block overview; nets are explicit global labels")
+  )
+  (lib_symbols)
+  (sheet
+    (at 38.1 38.1)
+    (size 88.9 25.4)
+    (stroke (width 0) (type default))
+    (fill (color 0 0 0 0.0000))
+    (uuid "22f7fb6c-e882-5323-b821-59fb0356655b")
+    (property "Sheetname" "10_power"
+      (at 38.1 37.2875 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "10_power.kicad_sch"
+      (at 38.1 64.2116 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/22f7fb6c-e882-5323-b821-59fb0356655b" (page "2"))
+      )
+    )
+  )
+  (sheet
+    (at 38.1 73.66)
+    (size 88.9 25.4)
+    (stroke (width 0) (type default))
+    (fill (color 0 0 0 0.0000))
+    (uuid "0a23d4be-30cf-57f6-901f-75675931ca76")
+    (property "Sheetname" "20_mcu_usb"
+      (at 38.1 72.8475 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "20_mcu_usb.kicad_sch"
+      (at 38.1 99.7716 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/0a23d4be-30cf-57f6-901f-75675931ca76" (page "3"))
+      )
+    )
+  )
+  (sheet
+    (at 38.1 109.22)
+    (size 88.9 25.4)
+    (stroke (width 0) (type default))
+    (fill (color 0 0 0 0.0000))
+    (uuid "333d3a8b-f2c2-57a7-820b-1979a7656bc6")
+    (property "Sheetname" "30_rc_mux"
+      (at 38.1 108.4075 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "30_rc_mux.kicad_sch"
+      (at 38.1 135.3316 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/333d3a8b-f2c2-57a7-820b-1979a7656bc6" (page "4"))
+      )
+    )
+  )
+  (sheet
+    (at 38.1 144.78)
+    (size 88.9 25.4)
+    (stroke (width 0) (type default))
+    (fill (color 0 0 0 0.0000))
+    (uuid "41ce54cb-8e43-5011-927d-3ba709238b7b")
+    (property "Sheetname" "40_debug"
+      (at 38.1 143.9675 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "40_debug.kicad_sch"
+      (at 38.1 170.8916 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kart_bridge_board"
+        (path "/cf4b68e8-f2b4-5eba-b802-9ec08061984e/41ce54cb-8e43-5011-927d-3ba709238b7b" (page "5"))
+      )
+    )
+  )
+  (sheet_instances (path "/" (page "1")))
+  (embedded_fonts no)
+)

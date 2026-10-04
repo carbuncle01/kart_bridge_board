@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1600" viewBox="0 0 2400 1600" role="img" aria-labelledby="title desc">
+  <title id="title">JPBB-01 Rev.2 部品配置と役割</title>
+  <desc id="desc">実際のKiCadレンダリングに、主要部品、コネクタ、信号経路、電源経路を日本語で注釈した図。</desc>
+  <defs>
+    <style>
+      text { font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif; fill: #172033; }
+      .title { font-size: 52px; font-weight: 800; }
+      .sub { font-size: 23px; fill: #506078; }
+      .box { fill: #ffffff; stroke: #b7c4d6; stroke-width: 3; }
+      .box-title { font-size: 25px; font-weight: 800; }
+      .box-body { font-size: 19px; fill: #394961; }
+      .tiny { font-size: 17px; fill: #52647d; }
+      .flow-title { font-size: 24px; font-weight: 800; fill: #ffffff; }
+      .flow-body { font-size: 20px; fill: #ffffff; }
+      .flow-tiny { font-size: 17px; fill: #ffffff; opacity: 0.88; }
+      .leader { fill: none; stroke: #2979ff; stroke-width: 5; marker-end: url(#arrow); }
+      .hot { fill: none; stroke: #ff8a00; stroke-width: 7; }
+      .badge { fill: #e53935; stroke: #ffffff; stroke-width: 4; }
+      .badge-text { font-size: 26px; font-weight: 900; fill: #ffffff; text-anchor: middle; dominant-baseline: middle; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#172033" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#2979ff"/>
+    </marker>
+    <marker id="arrow-white" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#ffffff"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="1600" fill="#f3f6fb"/>
+  <text x="70" y="78" class="title">JPBB-01 Rev.2　部品配置と役割</text>
+  <text x="72" y="118" class="sub">TOP VIEW｜USB-C が左下｜60 × 30 mm｜4層・部品は表面のみ</text>
+
+  <rect x="1500" y="34" width="830" height="100" rx="18" fill="#e8f1fd" stroke="#2979ff" stroke-width="4"/>
+  <text x="1530" y="75" font-size="27" font-weight="900" fill="#1565c0">主制御：U1　STM32G0B1CBT6</text>
+  <text x="1530" y="111" font-size="22" font-weight="700">受信機信号とPC制御を安全に切り替えるブリッジ基板</text>
+
+  <g filter="url(#shadow)">
+    <rect x="336" y="184" width="1728" height="990" rx="20" fill="#dce3ee"/>
+    <image href="generated/jpbb_rev2_top_board.png" x="350" y="200" width="1700" height="956" preserveAspectRatio="none"/>
+  </g>
+
+  <!-- Left-side callouts -->
+  <g>
+    <rect class="box" x="28" y="185" width="290" height="122" rx="15"/>
+    <text x="50" y="222" class="box-title">J1 / J2</text>
+    <text x="50" y="252" class="box-body">受信機 CH1 / CH2 入力</text>
+    <text x="50" y="280" class="tiny">操舵 / スロットル、S・+・−</text>
+    <path class="leader" d="M318 250 C420 250, 500 330, 628 377"/>
+    <path class="leader" d="M318 275 C540 250, 730 330, 914 377"/>
+
+    <rect class="box" x="28" y="455" width="290" height="125" rx="15"/>
+    <text x="50" y="494" class="box-title">SW1：RST</text>
+    <text x="50" y="526" class="box-body">MCUをリセット</text>
+    <text x="50" y="554" class="tiny">通常起動はこれだけ押す</text>
+    <path class="leader" d="M318 520 C410 520, 470 585, 562 631"/>
+
+    <rect class="box" x="28" y="650" width="290" height="170" rx="15"/>
+    <text x="50" y="690" class="box-title">U1：STM32G0B1CBT6</text>
+    <text x="50" y="722" class="box-body">USB / RC入力 / PWM生成</text>
+    <text x="50" y="750" class="box-body">VBEC監視 / フェイルセーフ</text>
+    <text x="50" y="787" class="tiny">128 KiB Flash、3.3 V動作</text>
+    <path class="leader" d="M318 730 C500 730, 680 706, 890 679"/>
+
+    <rect class="box" x="28" y="925" width="290" height="180" rx="15"/>
+    <text x="50" y="965" class="box-title">J6：USB-C</text>
+    <text x="50" y="997" class="box-body">PC通信・DFU・ロジック給電</text>
+    <text x="50" y="1027" class="box-title">U4：USBLC6-2</text>
+    <text x="50" y="1059" class="box-body">USB D+/D−のESD保護</text>
+    <text x="50" y="1087" class="tiny">USBだけではサーボ系は無給電</text>
+    <path class="leader" d="M318 1020 C430 1020, 510 1004, 614 983"/>
+    <path class="leader" d="M318 970 C430 900, 530 830, 644 786"/>
+  </g>
+
+  <!-- Right-side callouts -->
+  <g>
+    <rect class="box" x="2082" y="185" width="290" height="160" rx="15"/>
+    <text x="2104" y="224" class="box-title">J3：受信機 CH3</text>
+    <text x="2104" y="255" class="box-body">RC / PC 制御権の選択入力</text>
+    <text x="2104" y="290" class="box-title">SW2：BOOT</text>
+    <text x="2104" y="320" class="tiny">BOOTを押しつつRST→USB DFU</text>
+    <path class="leader" d="M2082 245 C1960 245, 1830 320, 1702 377"/>
+    <path class="leader" d="M2082 305 C1980 350, 1900 430, 1824 498"/>
+
+    <rect class="box" x="2082" y="420" width="290" height="170" rx="15"/>
+    <text x="2104" y="460" class="box-title">U5：VBEC監視</text>
+    <text x="2104" y="492" class="box-body">低電圧時にMUXを強制OFF</text>
+    <text x="2104" y="528" class="box-title">U3：3.3 V LDO</text>
+    <text x="2104" y="560" class="tiny">USBまたはBECからMCUへ給電</text>
+    <path class="leader" d="M2082 472 C1950 472, 1820 505, 1702 523"/>
+    <path class="leader" d="M2082 548 C1980 575, 1900 635, 1824 679"/>
+
+    <rect class="box" x="2082" y="650" width="290" height="150" rx="15"/>
+    <text x="2104" y="690" class="box-title">U2：TMUX7236</text>
+    <text x="2104" y="722" class="box-body">RC直通 / MCU PWMを選択</text>
+    <text x="2104" y="752" class="box-body">電源投入時は MANUAL</text>
+    <text x="2104" y="780" class="tiny">VBEC不足時は出力無効</text>
+    <path class="leader" d="M2082 724 C1940 724, 1800 690, 1655 654"/>
+
+    <rect class="box" x="2082" y="850" width="290" height="118" rx="15"/>
+    <text x="2104" y="889" class="box-title">J4：SERVO OUT</text>
+    <text x="2104" y="921" class="box-body">操舵サーボ出力、S・+・−</text>
+    <text x="2104" y="949" class="tiny">信号は U2 選択後</text>
+    <path class="leader" d="M2082 910 C1950 910, 1850 860, 1751 821"/>
+
+    <rect class="box" x="2082" y="990" width="290" height="160" rx="15"/>
+    <text x="2104" y="1029" class="box-title">J5：ESC / BEC IN</text>
+    <text x="2104" y="1061" class="box-body">ESC信号出力＋主電源入力</text>
+    <text x="2104" y="1094" class="box-title">C1：100 µF / 25 V</text>
+    <text x="2104" y="1124" class="tiny">VBECのバルク容量（極性あり）</text>
+    <path class="leader" d="M2082 1050 C1950 1050, 1850 1000, 1751 940"/>
+    <path class="leader" d="M2082 1110 C1900 1110, 1720 1010, 1547 928"/>
+  </g>
+
+  <!-- Central labels -->
+  <g>
+    <rect x="1035" y="225" width="410" height="86" rx="14" fill="#e8f0fe" stroke="#2979ff" stroke-width="3"/>
+    <text x="1060" y="260" class="box-title">J7：SWD / ST-LINK</text>
+    <text x="1060" y="290" class="tiny">初回設定・復旧用。VTrefは給電入力ではない</text>
+    <path class="leader" d="M1240 311 L1249 575"/>
+
+    <rect x="1370" y="1080" width="420" height="72" rx="14" fill="#fff8e1" stroke="#ff8a00" stroke-width="3"/>
+    <text x="1392" y="1111" class="box-title">D1 / D2：電源ダイオードOR</text>
+    <text x="1392" y="1139" class="tiny">VBECとUSBを相互逆流させずLOGIC_RAWへ</text>
+    <path d="M1450 1080 C1430 1035 1400 980 1384 942" class="hot"/>
+    <path d="M1415 1080 C1385 1030 1345 980 1320 942" class="hot"/>
+  </g>
+
+  <!-- Bottom overview -->
+  <g>
+    <rect x="70" y="1240" width="730" height="285" rx="22" fill="#1565c0"/>
+    <text x="105" y="1290" class="flow-title">信号の流れ</text>
+    <text x="105" y="1335" class="flow-body">J1 CH1 ─┐</text>
+    <text x="105" y="1372" class="flow-body">J2 CH2 ─┼→ U2 MUX → J4 / J5</text>
+    <text x="105" y="1409" class="flow-body">U1 PWM ─┘</text>
+    <text x="105" y="1460" class="flow-body">J3 CH3 → U1 → RC / PC権限判定</text>
+    <text x="105" y="1500" class="flow-tiny">MANUAL既定。AUTO条件成立時だけMCU側へ切替</text>
+
+    <rect x="835" y="1240" width="730" height="285" rx="22" fill="#2e7d32"/>
+    <text x="870" y="1290" class="flow-title">電源の流れ</text>
+    <text x="870" y="1335" class="flow-body">J5 BEC ─D1─┐</text>
+    <text x="870" y="1372" class="flow-body">J6 USB ─D2─┴→ U3 → +3.3 V → U1</text>
+    <text x="870" y="1420" class="flow-body">J5 BEC → 受信機 / サーボ / ESC / U2</text>
+    <text x="870" y="1468" class="flow-tiny">USB単独ではU1のみ起動。VBEC側へ逆給電しない</text>
+    <text x="870" y="1502" class="flow-tiny">正常判定: 5.2〜8.5 V（ファームウェア）</text>
+
+    <rect x="1600" y="1240" width="730" height="285" rx="22" fill="#6a1b9a"/>
+    <text x="1635" y="1290" class="flow-title">重要な安全境界</text>
+    <text x="1635" y="1335" class="flow-body">・VBEC逆接保護 / ヒューズ / TVSなし</text>
+    <text x="1635" y="1372" class="flow-body">・MCU停止時はハードウェアでMANUAL</text>
+    <text x="1635" y="1409" class="flow-body">・VBEC低下時はU5がMUX出力を無効化</text>
+    <text x="1635" y="1446" class="flow-body">・MCU異常＋RC消失の同時安全は未保証</text>
+    <text x="1635" y="1492" class="flow-tiny">初回試験はモーターを外し、車輪を浮かせる</text>
+  </g>
+</svg>
